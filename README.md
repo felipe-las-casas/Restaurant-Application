@@ -38,7 +38,13 @@ JWT_SECRET="sua_chave_secreta_aqui"
 npm i
 ```
 
-2. Inicie o servidor em modo de desenvolvimento:
+2. Faça as migrações no banco de dados:
+
+```
+npx prisma migrate dev
+```
+
+4. Inicie o servidor em modo de desenvolvimento:
 
 ```
 npm run dev
@@ -105,3 +111,4 @@ O comando abrirá o aplicativo no emulador ou permitirá escanear o QR code com 
 * Caso o servidor apresente erros, revise o conteúdo do `.env` e as variáveis digitadas.
 
 Com tudo configurado, o projeto estará pronto para ser executado nas três camadas.
+
